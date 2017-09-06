@@ -9,7 +9,7 @@ function tokenFormatter(config) {
   self.format = function(amount) {
     var ret = new BigNumber(amount.toString());
     var divisor = (new BigNumber(10)).toPower(self.config.tokenDecimals);
-    return ret/*.dividedBy(divisor)*/ + " " + self.config.tokenShortName;
+    return ret.dividedBy(divisor) + " " + self.config.tokenShortName;
   };
 }
 

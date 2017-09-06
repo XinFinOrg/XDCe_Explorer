@@ -13,7 +13,7 @@ var config = function () {
 
   this.tokenShortName = "XDC";
   this.tokenAddress = "0x2f1fa2082a7ca243adbe803beeaaa400a09daceb";
-  this.tokenDecimals = 18;
+  this.tokenDecimals = 4;
   this.tokenName = "XDC";
   this.tokenDescription = "XDC Network Token";
   this.tokenTotalSupply = 1000000000000000;
@@ -21,7 +21,6 @@ var config = function () {
   this.exportStartBlock = 0; // Start block for the historic export (set to 0 for a full export)
 
   this.names = {
-    "0x52f8370991b13748c42c5074c2d2c427895ecc2b": "XinFin Admin"
   }
 }
 

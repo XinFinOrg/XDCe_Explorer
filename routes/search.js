@@ -20,6 +20,9 @@ router.post('/', function(req, res, next) {
 	  }
 		res.redirect('/event/' + event[0]._id)});
 	}
+	else {
+		return next({ message: "Error: Invalid search string!" });
+	}
 });
 
 module.exports = router;

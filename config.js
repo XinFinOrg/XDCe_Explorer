@@ -4,8 +4,12 @@ var net = require('net');
 var config = function () {
 
   this.logFormat = "combined";
-  this.ipcPath = process.env["HOME"] + "/ethereum/privatechain/node/geth.ipc";
-  this.provider = new web3.providers.IpcProvider(this.ipcPath, net);
+  //Commented lines are for IPC
+  //this.ipcPath = process.env["HOME"] + "/ethereum/privatechain/node/geth.ipc";
+  //this.provider = new web3.providers.IpcProvider(this.ipcPath, net);
+  //This is for RPC
+  this.rpcPath = "http://127.0.0.1:8545";
+  this.provider = new web3.providers.HttpProvider(this.rpcPath);
 
   this.bootstrapUrl = "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css";
 

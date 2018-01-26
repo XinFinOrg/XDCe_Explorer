@@ -66,6 +66,7 @@ app.use('/accounts', accounts);
 app.use('/event', event);
 app.use('/events', events);
 app.use('/search', search);
+app.use('/api/account', require('./api/account'));
 
 app.locals.moment = require('moment');
 app.locals.nodeStatus = new(require('./utils/nodeStatus.js'))(config);

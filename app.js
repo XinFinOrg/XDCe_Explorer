@@ -53,7 +53,7 @@ app.set('db', db);
 app.set('trust proxy', true);
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger(config.logFormat));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -67,6 +67,7 @@ app.use('/event', event);
 app.use('/events', events);
 app.use('/search', search);
 app.use('/api/account', require('./api/account'));
+
 
 app.locals.moment = require('moment');
 app.locals.nodeStatus = new(require('./utils/nodeStatus.js'))(config);

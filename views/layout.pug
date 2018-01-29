@@ -13,6 +13,7 @@ html(lang="en")
 
     title XDC Explorer
 
+    link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
     link(href=config.bootstrapUrl, rel="stylesheet", crossorigin="anonymous")
     link(rel='stylesheet', href='/stylesheets/style.css')
 
@@ -31,11 +32,7 @@ html(lang="en")
           ul.nav.navbar-nav
             li
               a(href='/') Home
-            li
-              a(href='/accounts') Accounts
-            li
-              a(href='/events') Events
-
+          
           form.navbar-form.navbar-right(action="/search", method="POST")
             .form-group
               input.form-control#search(type='text', placeholder='Account, TxHash', name='search')
@@ -54,5 +51,5 @@ html(lang="en")
       hr
       footer
         p
-          a(href="https://github.com/gobitfly/erc20-explorer") ERC20 Explorer
-          |  | #{nodeStatus.version} | #{nodeStatus.nbrPeers} Peers connected
+          a(href="http://www.xinfin.org/wp-content/uploads/2017/10/The%20XDC%20Protocol%20-%20Tech%20Whitepaper%20by%20Xinfin%20Organization%20V1.0.pdf") XDC01 Protocol 
+          |  | #{nodeStatus.nbrPeers} Peers connected

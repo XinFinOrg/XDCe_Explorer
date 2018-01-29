@@ -8,7 +8,7 @@ var config = function () {
   //this.ipcPath = process.env["HOME"] + "/ethereum/privatechain/node/geth.ipc";
   //this.provider = new web3.providers.IpcProvider(this.ipcPath, net);
   //This is for RPC
-  this.rpcPath = "http://217.23.12.125:8545";
+  this.rpcPath = "http://78.129.229.142:8545";
   this.provider = new web3.providers.HttpProvider(this.rpcPath);
 
   this.bootstrapUrl = "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css";
@@ -19,7 +19,6 @@ var config = function () {
   this.tokenAddress = "0xb3078467383c1e5d5f3e0717c6e71198ac9ec2d3";
   this.tokenDecimals = 18;
   this.tokenName = "XinFin XDCE";
-  this.tokenDescription = "XDC Network Token";
   this.tokenTotalSupply = 100000000000000000000000000000;
 
   this.exportStartBlock = 0; // Start block for the historic export (set to 0 for a full export)
